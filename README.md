@@ -49,6 +49,14 @@ docker run --rm --user="$(id -u)" -v "$(pwd)":/avro \
     validate -c BACKWARD --schema {newfile}.asvc --previousSchema {oldfile}.asvc
 ```
 
+### Help
+
+Use to validate avro json schemas:
+
+```sh
+docker run --rm kpnnv/avro-cli
+```
+
 ## Acknowledgments
 
 * Based on the work from [brandonstubbs/avro-tools](https://github.com/brandonstubbs/docker-avro-tools)

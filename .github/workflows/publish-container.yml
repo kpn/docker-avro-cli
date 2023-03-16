@@ -34,12 +34,12 @@ jobs:
           build-args: |
             AVRO_CLI_VERSION=${{ github.event.inputs.version }}
           tags: |
-            kpnnv/avro-cli:latest
-            kpnnv/avro-cli:${{ github.event.inputs.version }}
+            kpnnl/avro-cli:latest
+            kpnnl/avro-cli:${{ github.event.inputs.version }}
       - name: Docker Hub Description
         uses: peter-evans/dockerhub-description@v3
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           short-description: ${{ github.event.repository.description }}
-          repository: "kpnnv/avro-cli"
+          repository: "kpnnl/avro-cli"

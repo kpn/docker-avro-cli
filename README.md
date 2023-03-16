@@ -1,6 +1,6 @@
 # Docker-avro-cli
 
-![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kpnnv/avro-cli?label=latest%20version)
+![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kpnnl/avro-cli?label=latest%20version)
 
 Container image for [avro-cli](https://github.com/rkluszczynski/avro-cli)
 
@@ -36,7 +36,7 @@ Check for new versions:
 ### Pull image
 
 ```sh
-docker pull kpnnv/avro-cli:0.2.7
+docker pull kpnnl/avro-cli:0.2.7
 ```
 
 ### Validation example
@@ -45,7 +45,7 @@ Use to validate avro json schemas:
 
 ```sh
 docker run --rm --user="$(id -u)" -v "$(pwd)":/avro \
-    kpnnv/avro-cli:0.2.7 \
+    kpnnl/avro-cli:0.2.7 \
     validate -c BACKWARD --schema {newfile}.asvc --previousSchema {oldfile}.asvc
 ```
 
@@ -54,7 +54,7 @@ docker run --rm --user="$(id -u)" -v "$(pwd)":/avro \
 Use to validate avro json schemas:
 
 ```sh
-docker run --rm kpnnv/avro-cli
+docker run --rm kpnnl/avro-cli
 ```
 
 ## Acknowledgments
